@@ -61,7 +61,7 @@ return [
             'database' => 'df60qlevdmqihk',
             'username' => 'boepqwmxsirnoo',
             'password' => 'f0dc36eb14af5f8635b355284cfe94d46eaee9880d743301e81dcde05b7e9fd6',
-            'charset' => 'utf8',
+            'charset' => 'utf8mb4',
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
