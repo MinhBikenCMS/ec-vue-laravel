@@ -1,0 +1,56 @@
+body {
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    margin: 0 11.5%;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 69px;
+    
+}
+
+
+/*------- NAVBAR -------*/
+.navbar {
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+    margin-left: 20%;
+}
+
+.navbar ul {
+    margin-top: 75px;
+    list-style-type: none;
+}
+.navbar ul li {
+    display: inline;
+    padding-left: 15%; 
+}
+.navbar li a {
+    color: #626262;
+}
+.navbar li a:hover {
+    color: #dadada;
+}
+
+/*------- CONTENT -------*/
+.content{
+    margin: 0 22.25%;
+}
+
+.content .first-post .post-name {
+    margin: inherit !important;
+}
+
+
+
