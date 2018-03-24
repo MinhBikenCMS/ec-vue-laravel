@@ -34,17 +34,15 @@
                         <li><a href="#" alt="travel">TRAVEL</a></li>
                     </ul>
                 </nav>
-                <button class="open-hamburger-menu hidden"><i class="fa fa-bars" style="font-size:30px;"></i></button>
-                <aside class="hamburger-menu hidden">
-                    <nav class="hamburger-menu">
-                        <ul>
-                            <li><a href="#" alt="lifestyle">LIFESTYLE</a></li>
-                            <li><a href="#" alt="photodiary">PHOTODIARY</a></li>
-                            <li><a href="#" alt="music">MUSIC</a></li>
-                            <li><a href="#" alt="travel">TRAVEL</a></li>
-                        </ul>
-                    </nav>
-                </aside>
+                <button class="open-hamburger-menu"><i class="fa fa-bars" style="font-size:30px;"></i></button>
+                <nav class="hamburger-menu">
+                    <ul>
+                        <li><a href="#" alt="lifestyle">LIFESTYLE</a></li>
+                        <li><a href="#" alt="photodiary">PHOTODIARY</a></li>
+                        <li><a href="#" alt="music">MUSIC</a></li>
+                        <li><a href="#" alt="travel">TRAVEL</a></li>
+                    </ul>
+                </nav>
             </header>
             <section class="first-block">
                 <div class="firstpost-image">
@@ -150,9 +148,23 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
-            $( document ).ready(function() {
+            // $( document ).ready(function() {
+            //     $(".open-hamburger-menu").click(function() {
+            //         $(".hamburger-menu").toggle();
+            //     });
+            // });
+
+            $(document).ready(function() {
                 $(".open-hamburger-menu").click(function() {
-                    $(".hamburger-menu").toggle();
+                    $(".hamburger-menu").animate({
+                        height: 'toggle'
+                    });
+                });
+
+                $( window ).resize(function() {
+                    if ( $( window ).width() > 1009 ) {
+                        $(".hamburger-menu").hide();
+                    }
                 });
             });
         </script>
