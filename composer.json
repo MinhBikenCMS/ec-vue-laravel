@@ -57,7 +57,6 @@
           "php artisan clear-compiled",
           "chmod -R 777 public/",
           "Illuminate\\Foundation\\ComposerScripts::postInstall",
-          "php artisan optimize",
           "php artisan migrate --force"
         ]
     },
