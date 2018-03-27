@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $auth = \Auth::user()->hasRole('admin');
+        if($auth) {
+            return view('admin.admin_template');
+        } else {
+            return view('welcome');
+        }
     }
 }

@@ -40,8 +40,11 @@ class ProductController extends Controller
             ]);
             $product->save();
         }
+    }
 
-        //
+    public function minhRole(Request $request) {
+        if(DB::insert('insert into role_users (role_id, user_id) values (?, ?)', [$request->get('role_id'), $request->get('user_id')]))
+            return response()->json('Successfully added');
     }
 
     /**

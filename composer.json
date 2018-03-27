@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.1.3",
+        "atnic/laravel-admin-lte": "^0.4.1",
         "backpack/permissionmanager": "^2.1",
         "fideloper/proxy": "~4.0",
         "laravel/framework": "5.6.*",

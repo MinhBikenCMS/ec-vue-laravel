@@ -15,3 +15,9 @@ Route::get('/shop', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', function () {
+    return view('admin.admin_template');
+});
+
+Route::get('/role', 'ProductController@minhRole');

@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.5.13"
     },
     "dependencies": {
+        "admin-lte": "^2.4.3",
         "laravel-vue-pagination": "^1.2.0"
     }
 }
