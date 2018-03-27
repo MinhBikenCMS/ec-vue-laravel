@@ -27,7 +27,7 @@ class HomeController extends Controller
         if($auth) {
             return view('admin.admin_template');
         } else {
-            return view('welcome');
+            return redirect('');
         }
     }
 }
