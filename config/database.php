@@ -61,7 +61,7 @@ return [
             'database' => 'ddbnbburloupsg',
             'username' => 'igfvmyvajrdywc',
             'password' => '8f2ad2566fe3af540d5fa02f45bbe54410b1c97aa9883ad55293a11ea745e097',
-            'charset' => 'utf8mb4',
+            'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
             'sslmode' => 'prefer',
