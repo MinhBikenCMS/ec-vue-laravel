@@ -17,36 +17,34 @@
         <link rel="stylesheet" href="css/main.css">
         
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
+
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+    </head>
+    <body>
         <!-- Add your site or application content here -->
-        <nav class="navbar">
-            <div class="container-fluid">
+        <div class="container-fluid">
+            <nav class="navbar">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle gray-menu" data-toggle="collapse" data-target="#hamburger-menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hamburger-menu">
                         <i class="fa fa-bars fa-2x"></i>
                     </button>
                     <h1><a href="#" alt="homepage">MINIMØ</a></h1>
                 </div>
                 <div class="collapse navbar-collapse" id="hamburger-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" alt="lifestyle">LIFESTYLE</a></li>
-                        <li><a href="#" alt="photodiary">PHOTODIARY</a></li>
-                        <li><a href="#" alt="music">MUSIC</a></li>
-                        <li><a href="#" alt="travel">TRAVEL</a></li>
+                        <li><a class="navbar-link" href="#" alt="lifestyle">LIFESTYLE</a></li>
+                        <li><a class="navbar-link" href="#" alt="photodiary">PHOTODIARY</a></li>
+                        <li><a class="navbar-link" href="#" alt="music">MUSIC</a></li>
+                        <li><a class="navbar-link" href="#" alt="travel">TRAVEL</a></li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-        <div class="container-fluid ">
+            </nav>
             <section class="first-block">
                 <div class="firstpost-image">
-                    <a href="#" alt="first-post"><img class="img-responsive center-block" src="img/image1.jpg" alt="first-post" /></a>
+                        <a href="#" alt="first-post"><img class="img-responsive center-block" src="img/image1.jpg" alt="first-post" /></a>
                 </div>
                 <div class="row">
                     <div class="firstpost-content col-xs-12 col-md-10 col-md-offset-1">
@@ -56,9 +54,9 @@
                         <span class="comment">LEAVE A COMMENT</span>
                     </div>
                 </div>
-            </section><!-- 1st-post - block-1 -->
+            </section>
             <section class="row">
-                <section class="col-xs-12 col-md-4 col-md-offset-1 col">
+                <section class="col-md-5 col-md-offset-1 col">
                     <div class="post-image">
                         <a href="#" alt="2nd-post"><img class="img-responsive center-block" src="img/image2.jpg" alt="post-image" /></a>
                     </div>
@@ -68,7 +66,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     </div>
                 </section><!-- 2nd-post col-1 -->
-                <section class="col-xs-12 col-md-4 col-md-offset-2 col">
+                <section class="col-md-5 col">
                     <div class="post-image">
                         <a href="#" alt="3rd-post"><img class="img-responsive center-block" src="img/image3.jpg" alt="post-image" /></a>
                     </div>
@@ -80,7 +78,7 @@
                 </section><!-- 3rd-post col-1 -->
             </section><!-- post-list - block-2 -->
             <section class="row">
-                <section class="col-xs-12 col-md-4 col-md-offset-1 col">
+                <section class="col-md-5 col-md-offset-1 col">
                     <div class="post-image">
                         <a href="#" alt="4th-post"><img class="img-responsive center-block" src="img/image4.jpg" alt="post-image" /></a>
                     </div>
@@ -90,7 +88,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     </div>
                 </section><!-- 4th-post col-2 -->
-                <section class="col-xs-12 col-md-4 col-md-offset-2 col">
+                <section class="col-md-5 col">
                     <div class="post-image">
                         <a href="#" alt="5th-post"><img class="img-responsive center-block" src="img/image5.jpg" alt="post-image" /></a>
                     </div>
@@ -101,25 +99,23 @@
                     </div>
                 </section><!-- 5th-post col-2 -->
             </section>
-            <div class="clearfix"></div>
-            <section class="block signup-form container-fluid">
+            <section class="block signup-form">
                 <div class="row">
-                    <span class="col-xs-12 col-md-8 col-md-offset-2 text-center">Sign up for our newsletter!</span>
+                    <span class="col-xs-12 text-center">Sign up for our newsletter!</span>
+                    <form class="col-xs-10 col-sm-6 col-md-4 form-inline center-block container">
+                        <div class="row">
+                            <div class="form-group col-xs-8">
+                                <input id="email" type="email" name="email" placeholder="Enter a valid email!" class="email-input" />
+                            </div>
+                            <div class="form-group col-xs-4 text-right">
+                                <input type="submit" name="subcribe" value="" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <form class="col-xs-12 col-md-8 col-md-offset-2 text-center form-inline">
-                    <div class="row">
-                        <div class="form-group col-xs-8 col-md-6">
-                            <input class="form-control" id="email" type="email" name="email" placeholder="Enter a valid email!" class="email-input" />
-                        </div>
-                        <div class="form-group col-xs-4 col-md-2">
-                            <button type="submit" name="subcribe" id="subcribe"></button>
-                            <!-- <input type="submit" name="subcribe" value="" /> -->
-                        </div>
-                    </div>
-                </form>
             </section><!-- signup-form - block-3 -->
             <section class="row">
-                <section class="col-xs-12 col-md-4 col-md-offset-1 col">
+                <section class="col-md-5 col-md-offset-1 col">
                     <div class="post-image">
                         <a href="#" alt="6th-post"><img class="img-responsive center-block" src="img/image6.jpg" alt="post-image" /></a>
                     </div>
@@ -129,7 +125,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                     </div>
                 </section><!-- 5th-post col-2 -->
-                <section class="col-xs-12 col-md-4 col-md-offset-2 col">
+                <section class="col-md-5 col">
                     <div class="post-image">
                         <a href="#" alt="7th-post"><img class="img-responsive center-block" src="img/image7.jpg" alt="post-image" /></a>
                     </div>
@@ -140,21 +136,23 @@
                     </div>
                 </section><!-- 5th-post col-2 -->
                 <div class="clearfix"></div>
-                <div class="load-more">
+                <div class="col-xs-2 center-block load-more">
                     <a href="#" alt="load-more">Load more</a>
                 </div>
             </section><!-- post-list-2 - block-4 -->
             <footer>
-                <span class="col">
-                    <a href="#">Terms and conditions</a>
-                    <a href="#">Privacy</a>
-                </span>
-                <span class="col">
-                    <p>Follow</p>
-                    <a href="#" alt="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" alt="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" alt="instagram"><i class="fa fa-instagram"></i></a>
-                </span>
+                <div class="row col-align">
+                    <span class="term col-xs-12 col-md-6">
+                        <a href="#">Terms and conditions</a>
+                        <a href="#">Privacy</a>
+                    </span>
+                    <span class="social col-xs-12 col-md-6">
+                        Follow
+                        <a href="#" alt="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" alt="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" alt="instagram"><i class="fa fa-instagram"></i></a>
+                    </span>
+                </div>
             </footer><!-- footer -->
         </div>
 
@@ -163,27 +161,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            // $( document ).ready(function() {
-            //     $(".open-hamburger-menu").click(function() {
-            //         $(".hamburger-menu").toggle();
-            //     });
-            // });
-
-            // $(document).ready(function() {
-            //     $(".open-hamburger-menu").click(function() {
-            //         $(".hamburger-menu").animate({
-            //             height: 'toggle'
-            //         });
-            //     });
-
-            //     $( window ).resize(function() {
-            //         if ( $( window ).width() > 1009 ) {
-            //             $(".hamburger-menu").hide();
-            //         }
-            //     });
-            // });
-        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
