@@ -208,16 +208,33 @@ h2, h3 {
 
 footer {
     background: #f0f0f0;
-    height: 100px;
     position: relative;
+    padding: 30px 0;
 }
 
-.col-algin {
-    display: inline-block;
-    padding: auto 0;
-    vertical-align: middle;
+footer .term a{
+    padding: 0 20px;
 }
 
+footer .social {
+    padding-right: 100px;
+}
+
+footer .social span, .social a {
+    padding: 0 6px;
+}
+
+@media (max-width: 767px) {
+    footer .social {
+        text-align: center;
+        padding-right: 0;
+        padding-top: 20px;
+    }
+
+    footer .term {
+        text-align: center;
+    }
+}
 
 
 
